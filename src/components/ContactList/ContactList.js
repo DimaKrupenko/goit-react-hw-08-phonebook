@@ -3,9 +3,9 @@ import styles from './ContactList.module.css';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 // import { deleteContacts } from '../redux/userSlice';
-import { fetchContacts, deleteContact } from '../redux/operations';
+import { fetchContacts, deleteContact } from '../redux/contacts/operations';
 import { useEffect } from 'react';
-import { getContacts } from '../redux/selectors';
+import { getContacts } from '../redux/contacts/selectors';
 
 const ContactList = () => {
   const dispatch = useDispatch();

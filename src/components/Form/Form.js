@@ -2,7 +2,7 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import styles from './Form.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'components/redux/operations';
+import { addContact } from 'components/redux/contacts/operations';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -23,7 +23,7 @@ const Form = () => {
       : dispatch(
           addContact({
             name: form.elements.name.value,
-            phone: form.elements.number.value,
+            number: form.elements.number.value,
           })
         );
 
