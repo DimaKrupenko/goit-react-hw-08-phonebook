@@ -26,7 +26,7 @@ const ContactList = () => {
       {visibleContact &&
         visibleContact.map(contact => (
           <li className={styles.contact__list} key={contact.id}>
-            {contact.name + ': ' + contact.phone}
+            {contact.name + ': ' + contact.number}
             <button
               className={styles.contact__buttton}
               type="click"
