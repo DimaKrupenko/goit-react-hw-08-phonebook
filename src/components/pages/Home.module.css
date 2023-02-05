@@ -1,0 +1,15 @@
+.reg {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+  margin-right: 20px;
+  border: 2px solid grey;
+  border-radius: 10%;
+  background: azure;
+}
+
+.reg.active {
+  color: #e84a5f;
+}
